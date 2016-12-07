@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 from django import template
-from django.conf import settings
 from django.contrib.staticfiles.storage import staticfiles_storage
 from django.utils.safestring import mark_safe
+
+from selectize_widget.conf import settings
 
 register = template.Library()
 

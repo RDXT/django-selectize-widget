@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 import re
-from django import forms
 
-from .conf import settings
+from django import forms
 
 
 class SelectizeMixin(object):
