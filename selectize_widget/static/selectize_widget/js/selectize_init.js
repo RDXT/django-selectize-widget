@@ -15,7 +15,7 @@
                 value = (value == "True") ? true : value;
                 value = (value == "False") ? false : value;
 
-                var accepted = ["load", "score", "render"];
+                var accepted = ["load", "score", "render", "onChange"];
                 if (accepted.includes(selectizeKey)) {
                     value = eval(value);
                     if (value == undefined) {

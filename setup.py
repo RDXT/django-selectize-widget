@@ -7,6 +7,8 @@ import os
 
 from setuptools import setup, find_packages
 
+from selectize_widget import VERSION
+
 
 def read(file_name):
     file_path = os.path.join(os.path.dirname(__file__), file_name)
@@ -19,7 +21,7 @@ DESCRIPTION = "Selectize widget for Django"
 AUTHOR = "Scott Adams"
 AUTHOR_EMAIL = "scott@rdxt.com"
 URL = "https://github.com/RDXT/django-selectize-widget"
-VERSION = __import__(PACKAGE).__version__
+VERSION = '.'.join(map(str, VERSION)),
 
 setup(
     name=NAME,
