@@ -6,7 +6,7 @@ SelectizeWidget()
 SelectizeMultipleWidget()
 
 You can add attributes to the widget via selectize_attrs:
-´´´
+```
 SelectizeWidget(selectize_attrs={
                     'hideSelected': True,
                     'load': 'vehicle_choices',
@@ -16,14 +16,14 @@ SelectizeWidget(selectize_attrs={
                     'preload': 'focus'
                 }
             )
-´´
+```
 
 # Static
-´´´
+```
 {% load selectize_widget_tags %}
 {% selectize_widget_css %}
 {% selectize_widget_js %}
-´´´
+```
 
 By default loads the following css and js:
 
