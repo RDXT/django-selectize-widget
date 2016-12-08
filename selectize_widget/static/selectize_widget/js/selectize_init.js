@@ -1,7 +1,6 @@
-(function () {
+$(function () {
     $('[data-selectize]').each(function (index, el) {
         var selectizeOptions = {};
-
         // We parse attributes in order to set appropriate options for selectize component
         var attributes = $(el)[0].attributes;
         $.each(attributes, function (index, attr) {
@@ -27,6 +26,5 @@
         });
 
         $(el).selectize(selectizeOptions);
-
     });
-})(window);
+});

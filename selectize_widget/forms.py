@@ -20,6 +20,18 @@ class SelectizeMixin(object):
         attrs['data-selectize'] = "selectize"
         super(SelectizeMixin, self).__init__(attrs)
 
+    def _get_media(self):
+        """
+        Construct Media as a dynamic property.
+        .. Note:: For more information visit
+            https://docs.djangoproject.com/en/1.8/topics/forms/media/#media-as-a-dynamic-property
+        """
+        return forms.Media(
+            js=('selectize_widget/js/selectize_init.js'),
+        )
+
+    media = property(_get_media)
+
 
 class SelectizeWidget(SelectizeMixin, forms.Select):
     pass

@@ -19,5 +19,4 @@ def selectize_widget_css():
 def selectize_widget_js():
     js_template = u'<script src="{}" type="text/javascript" charset="utf-8"></script>'
     js = js_template.format(settings.SELECTIZE_WIDGET_JS)
-    js += js_template.format(staticfiles_storage.url('selectize_widget/js/selectize_init.js'))
     return mark_safe(js)
