@@ -27,7 +27,7 @@ class SelectizeMixin(object):
             https://docs.djangoproject.com/en/1.8/topics/forms/media/#media-as-a-dynamic-property
         """
         return forms.Media(
-            js=('selectize_widget/js/selectize_init.js'),
+            js=('selectize_widget/js/selectize_init.js',),
         )
 
     media = property(_get_media)
