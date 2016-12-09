@@ -21,10 +21,12 @@ $(function () {
                         console.warn("Function not defined: " + attr.value);
                     }
                 }
+                if (selectizeKey == 'plugins') {
+                    value = value.split(',');
+                }
                 selectizeOptions[selectizeKey] = value;
             }
         });
-
         $(el).selectize(selectizeOptions);
     });
 });

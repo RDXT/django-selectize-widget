@@ -13,7 +13,8 @@ SelectizeWidget(selectize_attrs={
                     'searchField': 'text',
                     'valueField': 'value',
                     'labelField': 'text',
-                    'preload': 'focus'
+                    'preload': 'focus',
+                    'plugins': 'remove_button, restore_on_backspace' #comma seperated string of plugins
                 }
             )
 ```
@@ -23,6 +24,7 @@ SelectizeWidget(selectize_attrs={
 {% load selectize_widget_tags %}
 {% selectize_widget_css %}
 {% selectize_widget_js %}
+{{form.media}}
 ```
 
 By default loads the following css and js:
