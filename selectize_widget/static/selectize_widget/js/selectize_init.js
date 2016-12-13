@@ -14,7 +14,11 @@ $(function () {
                 value = (value == "True") ? true : value;
                 value = (value == "False") ? false : value;
 
-                var accepted = ["load", "score", "render", "onChange"];
+                var accepted = ["load", "score", "render", "onChange", "onInitialize", "onItemAdd", "onItemRemove",
+                    "onClear", "onOptionAdd", "onOptionRemove", "onOptionClear", "onOptionGroupAdd",
+                    "onOptionGroupRemove", "onOptionGroupClear", "onDropdownOpen", "onDropdownClose",
+                    "onType", "onDelete"];
+
                 if (accepted.includes(selectizeKey)) {
                     value = eval(value);
                     if (value == undefined) {
