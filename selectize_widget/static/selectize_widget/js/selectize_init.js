@@ -17,7 +17,7 @@ $(function () {
                 var accepted = ["load", "score", "render", "onChange", "onInitialize", "onItemAdd", "onItemRemove",
                     "onClear", "onOptionAdd", "onOptionRemove", "onOptionClear", "onOptionGroupAdd",
                     "onOptionGroupRemove", "onOptionGroupClear", "onDropdownOpen", "onDropdownClose",
-                    "onType", "onDelete"];
+                    "onType", "onDelete", "onFocus", "onBlur"];
 
                 if (accepted.includes(selectizeKey)) {
                     value = eval(value);
